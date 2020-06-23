@@ -1,0 +1,365 @@
+@charset "UTF-8";
+/* container 顯示在出來 
+----------------------- */
+.content {
+  max-width: 100%;
+  margin: 0 auto; }
+
+@media (max-width: 992px) {
+  .content {
+    max-width: 672px;
+    width: 100%;
+    margin: 0 auto; } }
+
+@media (max-width: 414px) {
+  .content {
+    max-width: 352px;
+    margin: 0 auto; } }
+
+/* _base 全站設定  
+----------------------- */
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+html, body {
+  font-family: 'Lato', sans-serif; }
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  /* 初始值 16*1.5 = 24px */ }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+a:hover {
+  color: #2A8356; }
+
+dl, ol, ul {
+  list-style-type: none;
+  padding: 0 0;
+  margin: 0 0; }
+
+h1, h2, h3 {
+  font-weight: bolder; }
+
+.h1 {
+  font-size: 64px;
+  margin-bottom: 32px; }
+
+.h2 {
+  font-size: 48px;
+  margin-bottom: 60px;
+  font-style: normal; }
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 4px; }
+
+.label-wrap {
+  width: 100%;
+  margin: 0 auto; }
+
+.label-contact-group {
+  margin-bottom: 16px; }
+
+input[type="text"], textarea {
+  width: 100%;
+  border: #0000009A;
+  background: transparent;
+  margin-top: 4px;
+  padding: 14px 16px; }
+
+::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 24px; }
+
+::-moz-placeholder {
+  font-size: 16px;
+  line-height: 24px; }
+
+:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 24px; }
+
+::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 24px; }
+
+::placeholder, input[type="submit"], label {
+  font-size: 16px;
+  line-height: 24px; }
+
+label input[type="checkbox"] {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 4px; }
+
+.submit {
+  margin-top: 42px;
+  text-align: center; }
+
+input[type="submit"] {
+  cursor: pointer;
+  background: #AA0601;
+  color: #fff;
+  border: #AA0601; }
+
+input[type="submit"]:hover {
+  background: #650300; }
+
+.main-inner {
+  padding: 64px 0 80px; }
+
+/* _util 工具 
+----------------------- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+.bg-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.bg-contain {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.container-inner {
+  width: 75%;
+  margin: 0 auto; }
+
+.content {
+  padding: 0 25px; }
+
+.display-block {
+  display: block; }
+
+.display-in-block {
+  display: inline-block; }
+
+.position-r {
+  position: relative; }
+
+.font-align {
+  text-align: center; }
+
+.font-align-left {
+  text-align: left; }
+
+.font-align-right {
+  text-align: right; }
+
+.font-weight-medium {
+  font-weight: 400; }
+
+.font-weight-big {
+  font-weight: 500; }
+
+.mb-xl {
+  margin-bottom: 32px; }
+
+.mb-md {
+  margin-bottom: 24px; }
+
+.mb-sl {
+  margin-bottom: 22px; }
+
+.mb-ssl {
+  margin-bottom: 12px; }
+
+.mr-xl {
+  margin-right: 32px; }
+
+.mr-md {
+  margin-right: 24px; }
+
+.mr-sl {
+  margin-right: 22px; }
+
+.mr-ssl {
+  margin-right: 12px; }
+
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v51/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format("woff2"); }
+
+.material-icons {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  vertical-align: middle;
+  cursor: pointer;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
+  .material-icons.more {
+    color: #2a8356; }
+
+.wrap {
+  display: flex;
+  height: 100vh; }
+
+nav.header {
+  height: 93px;
+  padding-top: 24px; }
+  nav.header h2, nav.header p {
+    margin-bottom: 0; }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  background: #EDF4EE;
+  padding: 32px 0 32px 32px;
+  min-width: 296px;
+  background-color: #edf4ee; }
+  .sidebar li {
+    margin-bottom: 29px;
+    cursor: pointer; }
+    .sidebar li i {
+      margin-right: 16px;
+      vertical-align: bottom; }
+  .sidebar .purson p {
+    margin-bottom: 4px; }
+    .sidebar .purson p:last-child {
+      color: gray;
+      font-size: 14px; }
+  .sidebar .purson img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; }
+
+.list-group-item-action {
+  color: #000; }
+
+.font-size-xxs {
+  font-size: 14px !important; }
+
+.border-radius-none {
+  border-radius: 0px; }
+
+div span {
+  display: inline-block;
+  background-color: #edf4ee;
+  color: #2a8356;
+  padding: 0 4px;
+  text-align: center;
+  font-weight: 600; }
+
+.main {
+  margin-left: 296px;
+  padding: 0 32px 32px 32px; }
+  .main .content {
+    padding: 0 0px; }
+    .main .content .allComment p {
+      text-align: left;
+      margin-bottom: 0rem;
+      font-size: 16px;
+      font-weight: bold; }
+    .main .content .comment p {
+      text-align: right;
+      font-size: 12px;
+      color: #707070;
+      margin-bottom: 0rem;
+      line-height: 2.2em; }
+    .main .content .card-body p.contentBox-colorGray {
+      color: #707070; }
+    .main .content button {
+      background-color: #2a8356;
+      border: 1px solid #2a8356;
+      font-size: 16px;
+      padding: 8px 32px;
+      color: #fff;
+      font-weight: 500;
+      border-radius: 5px;
+      color: #fff; }
+      .main .content button .buttonHandler {
+        background-color: #2a8356;
+        border: 1px solid #2a8356; }
+      .main .content button:hover {
+        background-color: transparent;
+        border: 1px solid #2a8356;
+        color: #2a8356; }
+    .main .content .card-header {
+      color: initial;
+      border-color: #CDDDCD;
+      background-color: #EDF4EE; }
+    .main .content .list-group-item {
+      border: 1px solid #CDDDCD;
+      padding: 12px 12px; }
+      .main .content .list-group-item:last-child, .main .content .list-group-item:first-child {
+        border-bottom-right-radius: 0rem;
+        border-bottom-left-radius: 0rem;
+        border-top-left-radius: 0rem;
+        border-top-right-radius: 0rem; }
+      .main .content .list-group-item.active {
+        color: initial;
+        border-color: #CDDDCD;
+        background-color: #EDF4EE; }
+      .main .content .list-group-item li p {
+        font-size: 12px;
+        margin-bottom: 4px; }
+        .main .content .list-group-item li p.font-size-xs {
+          font-size: 16px !important; }
+      .main .content .list-group-item li:last-child p {
+        margin-bottom: 8px; }
+        .main .content .list-group-item li:last-child p.fontLight {
+          color: #0000009A; }
+    .main .content .tab-content .card.list-group-item {
+      padding: 0 0rem; }
+      .main .content .tab-content .card.list-group-item .media-body img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%; }
+      .main .content .tab-content .card.list-group-item .media-body .media-title h4 {
+        font-size: 14px; }
+      .main .content .tab-content .card.list-group-item .media-body .media-title h5 {
+        font-size: 12px; }
+      .main .content .tab-content .card.list-group-item .media-body .media-body-item {
+        padding-left: 58px; }
+        .main .content .tab-content .card.list-group-item .media-body .media-body-item p, .main .content .tab-content .card.list-group-item .media-body .media-body-item ol {
+          font-size: 14px; }
+          .main .content .tab-content .card.list-group-item .media-body .media-body-item p li, .main .content .tab-content .card.list-group-item .media-body .media-body-item ol li {
+            padding-left: 16px; }
+      .main .content .tab-content .card.list-group-item .media-body button {
+        background-color: #EDF4EE;
+        border: 1px solid #CDDDCD;
+        line-height: 40px;
+        padding-left: 12px;
+        padding-right: 16px;
+        font-weight: bold;
+        margin-right: 8px;
+        border-radius: 0px;
+        color: #000; }
+
+/*# sourceMappingURL=all.css.map */
