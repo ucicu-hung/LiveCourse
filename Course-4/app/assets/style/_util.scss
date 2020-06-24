@@ -11,3 +11,10 @@
     background-color: $bgColor-thridLight;
     border-top: 1px solid $color-thridDark;
 }
+
+@media (max-width: 414px){
+    .card-body{
+        font-size: 14px;
+    }
+    
+}
