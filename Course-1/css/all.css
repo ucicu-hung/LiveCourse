@@ -1,0 +1,265 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+*,html,body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 1.共同 */
+.wrapper{
+    width: 1400px;
+    margin: 0 auto;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+hr{
+    border-top: 1.5px solid #000000;
+}
+.pt40{
+    padding-top: 40px;  
+}
+.pb40{
+    padding-bottom: 40px;
+}
+h2{
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding-left: 9px;
+}
+p{
+    font-family: '"PingFang TC", sans-serif';
+}
+.red,
+.write{
+  font-size: 24px;
+  line-height: 32px;
+  color: #A00404;
+  padding-left: 16px;
+  font-family: 'Medium', 'Roboto', sans-serif;
+  text-transform:uppercase;
+  font-style:normal
+}
+.write{
+    color: #ffffff;
+}
+.main{
+    background-color: #415165;
+    padding: 30px 0px;
+}
+.medium{
+  font-weight: 500;
+}
+.bold{
+  font-weight: 700;
+}
+.black{
+  font-weight: 900;
+}
+
+
+
+/* 2.main */
+.header h1{
+    font-size: 80px;
+    line-height: 90px;
+    font-family: 'Regular','Andale Mono';
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+.title{
+  border-bottom: 1px solid #000000;
+  margin-bottom: 15px;
+}
+.introduction{
+  margin-bottom: 50px;
+}
+.discBox {
+    margin-bottom: 72px;
+    margin-left: 48px;
+    position: relative;
+}
+.discBox li{
+    margin-bottom: 24px;
+}
+.discBox li.disc::before{
+    content: "";
+    position: absolute;
+    background: #96A9C4;
+    left: -24px;
+    top: 10px;
+    width: 1px;
+    height: 80%;
+}
+.discBox li p{
+    font-size: 24px;
+    line-height: 36px;
+}
+.discBox li.disc p::before{
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: 10px;
+    background: #96A9C4;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+.discBox li.disc p::after{
+    content: "";
+    position: absolute;
+    left: -32px;
+    bottom: 10px;
+    background: #96A9C4;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+.discBox li::before{
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: 10px;
+    background: #96A9C4;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+
+
+.skill{
+	position: relative;
+	width: 1200px;
+	
+	background-color: #415165;
+    margin: 0 auto;
+    margin-bottom: 72px;
+	padding:24px 60px 55px;
+	color: white;
+}
+.skill::after {
+	content: "";
+	position: absolute;
+	background-color: #96A9C4;
+	z-index: -1;
+	height: 360px;
+	width: 100vw;
+	left: -103px;
+	top: 62px;
+}
+.skillsTitle{
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 6px;
+    margin-bottom: 38px;
+}
+.skill ul{
+    width: 216px;
+    padding-left: 23px;
+    border-left: 1px solid #96A9C4;
+    margin: 0 auto;
+}
+.skill li{
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 36px;
+    margin-bottom: 16px;
+}
+
+
+
+/* work */
+.work{
+    width: 650px;
+}
+.discBox li.workLink::before{
+    content: "";
+    position: absolute;
+    background: #96A9C4;
+    left: -24px;
+    top: 10px;
+    width: 1px;
+    height: 100%;
+}
+.discBox li.workLink span{
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+.work img{
+    display: block;
+    padding:8px 0px;
+}
+
+
+/* contace */
+.contace{
+    color: #ffffff;
+}
+.contace .link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contace .link a{
+    display: block;
+    margin: 0 12px;
+}
+.contace li p{
+    padding-bottom: 16px;
+    font-size: 24px;
+    line-height: 36px;
+    padding-left: 20px;
+    text-align: center;
+    font-weight: 300;
+}

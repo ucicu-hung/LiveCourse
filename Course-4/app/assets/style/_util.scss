@@ -1,0 +1,12 @@
+.card{
+    border: 1px solid $color-thridDark;
+    border-radius: 0rem;
+}
+.card-header {
+    background-color: $bgColor-white;
+    border-bottom: 1px solid $color-thridDark;
+}
+.card-body{
+    background-color: $bgColor-thridLight;
+    border-top: 1px solid $color-thridDark;
+}

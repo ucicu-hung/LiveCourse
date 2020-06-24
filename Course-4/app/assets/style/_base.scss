@@ -1,0 +1,73 @@
+// base
+h1.h1 {
+    font-size: $font-size-lg;
+    font-weight: $font-w-bold;
+}
+  
+h2.title {
+    font-size: $font-size-md;
+    margin-bottom: 60px;
+    color:$color-perimayDark;
+    font-style: $font-style-normal;
+    font-weight: $font-w-bold;
+}
+h2.h2{
+    font-size: $font-size-mdx;
+}
+h3.h3 {
+    font-size: $font-size-xs;
+    color: $color-perimayDark;
+    text-align: $text-alignC;
+    margin-bottom: 4px;
+}
+
+// Use color
+
+.color-ParimayDark {
+    color: $color-perimayDark;
+}
+
+.colorRed-Light {
+    color: $color-perimay;
+}
+
+.color-thridDark{
+    color: $color-thridDark !important;
+}
+.bgColor-fluid {
+    background-color: $bgColor-perimayLight;
+}
+
+.bgColor-perimayDark {
+    background-color: $bgColor-perimayDark;
+}
+
+.bgColor-perimayLight {
+    background-color: $bgColor-perimay;
+}
+
+// util
+.my-0{
+    margin: $my-0;
+}
+.mb-rem-1{
+    margin-bottom: $mb-rem-1;
+}
+.mt-rem-5{
+    margin-top: $mt-rem-5;
+}
+.mb-rem-9{
+    margin-bottom: $mb-rem-9;
+}
+
+
+// align
+.alignLeft {
+    text-align: $text-alignL;
+}
+.alignCenter {
+    text-align: $text-alignC;
+}
+.alignRight {
+    text-align: $text-alignR;
+}

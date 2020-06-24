@@ -1,0 +1,309 @@
+/* 共通 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* wrapper */
+header,main,footer{
+    max-width:100%;
+    margin: 0 auto;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* color  */
+.color-write { color: #ffffff; }
+.color-block { color: #000000; }
+.color-red { color: red; }
+.border-bt-line { border-bottom: 1px solid #000000;}
+
+
+/* Font */
+h1 {
+    font-size: 80px;
+    line-height: 94px;
+    font-style: italic;
+    font-weight: bold;
+}
+/* h2 */
+.title {
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    font-style: italic;
+    padding-top: 64px;
+    margin-bottom: 40px;
+}
+.brand .title{
+    margin-bottom: 16px;
+}
+.works .title{
+    margin-bottom: 24px;
+}
+
+/* p段落 */
+p,.text-small.text-li-height {
+    font-size: 24px;
+    line-height: 42px;
+    font-style: italic;
+}
+.text-small{
+    font-size: 20px;
+}
+.text-li-height{
+    line-height: 36px;
+}
+/* 對齊 */
+.align-center {
+    text-align: center;
+}
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.font-normal {
+    font-style: normal;
+}
+.font-italic {
+    font-style: italic;
+}
+.font-bold {
+    font-weight: bold;
+}
+
+
+/* 間距 8倍數*/
+.mb-1 {
+    margin-bottom: 8px;
+}
+.mb-2 {
+    margin-bottom: 16px;
+}
+.mb-3 {
+    margin-bottom: 24px;
+}
+.mb-4 {
+    margin-bottom: 32px;
+}
+.mb-5 {
+    margin-bottom: 40px;
+}
+.mb-6 {
+    margin-bottom: 48px;
+}
+.mb-7 {
+    margin-bottom: 56px;
+}
+.mb-8 {
+    margin-bottom: 64px;
+}
+.mb-9 {
+    margin-bottom: 72px;
+}
+.ml-3 {
+    margin-bottom: 24px;
+}
+
+/* 特殊間距 */
+.mt-0{
+    margin-top: -9px;
+}
+.mb-0{
+    margin-bottom: -1px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.pb-160{
+    padding-bottom: 160px;
+}
+.pb-1 {
+    padding-bottom: 10px;
+}
+.pb-2 {
+    padding-bottom: 20px;
+}
+.pb-74{
+    padding-bottom: 74px;
+}
+.pt-64 {
+    padding-top: 64px;
+}
+.pt-356 {
+    padding-top: 356px;
+}
+.pb-40 {
+    padding-bottom: 40px;
+}
+.pb-256 {
+    padding-bottom: 256px;
+}
+
+
+
+
+
+/* flax */
+.flexbox{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-justify-content-center{
+    justify-content: center;
+    align-items: center;
+}
+
+/* section */
+.header {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png);
+}
+.brand{
+    background-color: #000;
+}
+.bg-cover{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* 1呈現圖片尺寸。 2.cover圖片完整呈現/ */
+    /* width: 100%; */
+}
+.works-list{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/photo-1561291386-5be50364cfb5.png);
+    background-position: center 89px;
+    background-repeat: no-repeat;
+    padding-bottom: 111px;
+    background-size: cover;
+}
+.footer{
+    background-color: black;
+}
+
+/* header */
+.headerInner {
+    width: 306px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #ffffff;
+}
+
+.headerInner ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.headerInner li {
+    margin: 0px 8px;
+}
+
+.headerInner li a img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    color: #ffffff;
+    opacity: 1;
+    transition: all 0.3;
+}
+
+.headerInner li a:hover img {
+    opacity: 0.8;
+}
+
+
+/* about */
+.about {
+    width: 410px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.about img {
+    padding: 0 13px;
+}
+
+.about img {
+    padding: 0 13px 24px;
+}
+
+.about ul {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.about li {
+    font-size: 24px;
+    line-height: 42px;
+    margin-bottom: 19px;
+    position: relative;
+    font-style: italic;
+}
+
+.about li::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    margin-left: -35px;
+    color: #891818;
+    background-color: #891818;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+}
+
+.about .txt-mb20 {
+    margin-bottom: 20px;
+}
+
+/* my brand */
+.brand li{
+    margin-right: 24px;
+}
+
+
+/* works */
+.works .preface {
+    margin-bottom: 89px;
+}
+.works .works-list-item:first-of-type{
+    margin-top: -39px;
+}
+.works .works-list-item li{
+    padding: 0px 12px 45px;
+}
+.works img{
+    padding-bottom: 5px;
+}
+.works .works-list-item p{
+    font-size: 20px;
+    line-height: 42px;
+    text-align: center;
+    font-style: normal;
+    color: #ffffff;
+}
+
+/*  aos */
