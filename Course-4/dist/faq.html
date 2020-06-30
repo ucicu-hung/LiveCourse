@@ -1,53 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+title: 常見問題
+layout: ./app/layout.ejs
+engine: ejs
+current: FAQ
+---
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>常見問題</title>
-  <!-- fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" >
-  <!-- bootstrap 4.5.0 -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">  
-
-  <link rel="stylesheet" href="./assets/style/style.css">
-</head>
-
-<body>
-  <header class="main-header">
-    <div class="d-flex d-flex-row jc-sb ai-c">
-        <h2>
-            <a href="index.html">
-                <img class="h-logo" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png" alt="第三週作業">
-            </a>
-        </h2>
-        <nav>
-            <div class="m-hamburger jq-hamburger">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-            </div>
-            <ul class="main-nav d-flex jc-fs ">
-                <li><a href="#">系列鏡框</a></li>
-                <li><a href="#">門市據點</a></li>
-                <li><a href="#">部落格</a></li>
-                <li><a href="faq.html">常見問題</a></li>
-            </ul>
-        </nav>
-    </div> 
-  </header>
-
-  
 <main>
     <section class="banner banner__headerBanner bg-cover">
         <div class="container d-flex flex-column justify-content-end align-items-start" style="height: 100%;"> 
-            <h2 class="title color-thridDark my-0 alignLeft">常見問題</h2>
+            <h2 class="title color-thridDark my-0 font-align-left">常見問題</h2>
         </div>
     </section>
     <section>
         <div class="container">
-            <h2 class="h2 mb-rem-1 mt-rem-5 alignLeft">我想詢問配鏡問題</h2>
+            <h2 class="h2 mb-rem-1 mt-rem-5 font-align-left">我想詢問配鏡問題</h2>
            <div class="accordion mb-rem-9" id="accordionExample">
             <div class="card">
                 <div class="card-header pl-0" id="headingOne">
@@ -129,60 +95,3 @@
         </div>
     </section>
   </main>
-
-  <footer class="footer position-r">
-    <div class="container container-inner main-inner inner">
-        <nav class="footer-info">
-            <div>
-                <ul class="footer-nav-menu">
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="#">系列鏡框</a></li>
-                    <li><a href="#">門市據點</a></li>
-                    <li><a href="#">部落格</a></li>
-                    <li><a href="faq.html">常見問題</a></li>
-                </ul>
-                <ul class="footer-info-contact">
-                    <li class="d-flex jc-fs ai-c">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-phone.svg" alt="">
-                        <p>0800-000-000</p>
-                    </li>
-                    <li class="d-flex jc-fs ai-c">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-mail.svg" alt="">
-                        <p>glasses@business.com</p>
-                    </li>
-                </ul>
-            </div>
-            <ul class="medaia-area">
-                <li>
-                    <a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-fb.svg" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-ig.svg" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-line.svg" alt=""></a>
-                </li>
-            </ul> 
-        </nav>
-        <nav class="footer-copyright">
-            <ul class="footer-copyright-list">
-                <li class="d-flex">
-                    <img class="f-logo"src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png" alt=""><p>Copyright © 2020 Glasses.All rights reserved.</p>
-                </li>
-                <li class="d-flex">
-                    <a href="#">隱私權政策</a>
-                    <a href="#">服務條款</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-  </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
-  <!-- Bootstrap Include Js =================================-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-</body>
-
-</html>
