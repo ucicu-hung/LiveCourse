@@ -94,15 +94,6 @@ footer {
 /* medaia-area */
 .medaia-area {
     display: flex; 
-    // > li {
-    //     margin-right: $mr-big;
-    //     &:last-child {
-    //         margin-right: 0;
-    //     }
-    //     @include iphone{
-    //         margin-right: 24px;
-    //     }
-    // }
     li {
         margin-right: $mr-big;
         @include iphone{
