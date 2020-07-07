@@ -405,10 +405,13 @@ footer {
     .container {
       width: 100%; } }
 
-.content-inner {
+.content {
   width: 88%; }
 .content p.txt-medium{
   padding-bottom: 8px;
+}
+.content .inner{
+  padding: 24px 0px;
 }
 
 .main-inner {
