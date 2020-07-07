@@ -1,0 +1,133 @@
+// 斷點
+@mixin pad{
+    @media (max-width:768px){
+        @content;
+    }
+}
+
+@mixin iphone{
+    @media (max-width:568px){
+        @content;
+    }
+}
+
+
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: $font-html-size;
+}
+
+html,body {
+    font-family: $font-body-family;
+    line-height: $font-line-height;
+    // 初始值 16*1.5 = 24px 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; //解決img的留白2~3px
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+/* 1.fontStyle */
+h1.h1 {
+    font-size: $font-size-lg;
+    font-weight: $font-w-bold;
+    // @include iphone{
+    //     font-size: $font-size-mdx;
+    // }
+}
+  
+h2.title {
+    font-size: $font-size-md;
+    margin-bottom: 60px;
+    color:$red-darker;
+    font-style: $font-style-normal;
+    font-weight: $font-w-bold;
+    text-align: $font-align-c;
+    @include iphone{
+        font-size: $font-size-xs;
+        margin-bottom: $mb-xsmall;
+    }
+}
+
+h2.h2{
+    font-size: $font-size-mdx;
+}
+
+h3.h3 {
+    font-size: $font-size-xs;
+    color: $red-darker;
+    text-align: $font-align-c;
+    margin-bottom: 4px;
+    @include iphone{
+        font-size: $font-size-xxs;
+    }
+}
+
+
+
+/* 2.color */
+.color-ParimayDark {
+    color: $red-darker;
+}
+
+.colorRed-Light {
+    color: $red-base;
+}
+
+.color-thridDark{
+    color: $red-darker;
+}
+
+.bgColor-fluid {
+     background-color: $red-light; // $red-base; 
+}
+
+.bgColor-primaryDark  {
+    background-color: $red-darker;
+}
+
+.bgColor-perimayLight {
+    background-color: $red-base;
+}
+
+/* 3.space */
+.my-0{
+    margin: $my-0;
+}
+.mb-rem-1{
+    margin-bottom: $mb-rem-1;
+}
+.mt-rem-5{
+    margin-top: $mt-rem-5;
+}
+.mb-rem-9{
+    margin-bottom: $mb-rem-9;
+}
+
+
+/* 4. bg-cover */
+.bg-cover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+.bg-contain {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+

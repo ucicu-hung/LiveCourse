@@ -1,0 +1,50 @@
+/* 5. from */
+.label-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+  
+.label-contact-group {
+    margin-bottom: 16px;
+}
+  
+input[type="text"], textarea {
+    width: 100%;
+    border: 1px solid #000;
+    background: transparent;
+    margin-top: 4px;
+    padding: 14px 16px;
+}
+  
+::-webkit-input-placeholder, input[type="submit"], label, :-ms-input-placeholder, input[type="submit"], label, ::-ms-input-placeholder, input[type="submit"], label, ::placeholder, input[type="submit"] {
+    font-size: 16px;
+    line-height: 24px;
+}
+  
+label {
+    font-size: 16px;
+    line-height: 24px;
+  
+    input[type="checkbox"] {
+      display: inline-block;
+      cursor: pointer;
+      margin-right: 4px;
+    }
+}
+  
+.submit {
+    margin-top: 42px;
+    text-align: center;
+}
+  
+input[type="submit"] {
+    cursor: pointer;
+    background: #AA0601;
+    color: #fff;
+    padding: 16px 58px;
+    border: 1px solid #AA0601;
+  
+    &:hover {
+      background: #650300;
+    }
+}

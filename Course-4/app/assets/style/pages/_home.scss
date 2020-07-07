@@ -1,0 +1,33 @@
+.banner {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png);
+    height: 840px;
+    @include iphone{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png);
+        height: 394px;
+    }
+}
+
+
+
+  
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    height: 100%;
+    font-weight: bold;
+    &__list-banner{
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+  
+    .banner-text {
+        font-size: 36px;
+        @include iphone{
+            font-size: $font-size;
+        }
+    }
+}
+

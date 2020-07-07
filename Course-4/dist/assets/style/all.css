@@ -106,7 +106,7 @@ h3.h3 {
   color: #660401; }
 
 .bgColor-fluid {
-  background-color: white; }
+  background-color: #AA06010D; }
 
 .bgColor-primaryDark {
   background-color: #660401; }
@@ -219,6 +219,17 @@ input[type="submit"] {
       .main-header img.h-logo {
         width: 48px;
         height: 30px; } }
+  @media (max-width: 568px) {
+    .main-header .m-hamburger {
+      position: absolute;
+      top: 40%;
+      left: 16px; } }
+  @media (max-width: 568px) {
+    .main-header .m-hamburger .line {
+      width: 22px;
+      height: 2px;
+      background: #fff;
+      margin: 0 0 3px 3px; } }
 
 .haver-nav {
   display: flex;
@@ -228,7 +239,10 @@ input[type="submit"] {
   color: white; }
   @media (max-width: 768px) {
     .haver-nav {
-      display: none; } }
+      display: none !important; } }
+  @media (max-width: 568px) {
+    .haver-nav {
+      display: none !important; } }
   .haver-nav li {
     font-size: 20px;
     line-height: 30px;
@@ -327,20 +341,18 @@ footer {
         margin-right: 12px; }
         @media (max-width: 768px) {
           .footer-info-contact > li:nth-of-type(2) img {
-            margin-right: 8px;
-            width: 20px;
-            height: 20px; } }
+            margin-right: 8px; } }
 
 /* medaia-area */
 .medaia-area {
   display: flex; }
-  .medaia-area > li {
+  .medaia-area li {
     margin-right: 32px; }
-    .medaia-area > li:last-child {
-      margin-right: 0; }
     @media (max-width: 568px) {
-      .medaia-area > li {
-        margin-right: 24px; } }
+      .medaia-area li {
+        margin-right: 8px; } }
+    .medaia-area li:last-child {
+      margin-right: 0; }
 
 /* footer-copyright */
 .footer-copyright-list {
@@ -378,8 +390,6 @@ footer {
         margin-bottom: 8px; } }
     .footer-copyright-list li a:last-child {
       margin-right: 0; }
-    .footer-copyright-list li a:nth-of-type(2) {
-      margin-bottom: 0px; }
 
 /* layout - container */
 .container {
@@ -393,14 +403,21 @@ footer {
     .container {
       width: 100%; } }
 
-.container-inner {
-  width: 88%; }
-
 .main-inner {
-  padding: 64px 0 80px; }
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 64px;
+  padding-bottom: 64px; }
+  @media (max-width: 768px) {
+    .main-inner {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
   @media (max-width: 568px) {
-    .main-inner.innder {
-      padding: 24px 12px; } }
+    .main-inner {
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 12px;
+      padding-bottom: 12px; } }
 
 @media (max-width: 992px) {
   h2.title {
@@ -423,19 +440,6 @@ h3.h3 {
       background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png);
       height: 394px; } }
 
-@media (max-width: 568px) {
-  .m-hamburger {
-    position: absolute;
-    top: 40%;
-    left: 16px; } }
-
-@media (max-width: 568px) {
-  .m-hamburger .line {
-    width: 22px;
-    height: 2px;
-    background: #fff;
-    margin: 0 0 3px 3px; } }
-
 .banner-content {
   display: flex;
   flex-direction: column;
@@ -457,6 +461,9 @@ h3.h3 {
 /* glass */
 .glass-series-list {
   padding: 0 48px; }
+  @media (max-width: 568px) {
+    .glass-series-list {
+      padding: 0 0px; } }
   .glass-series-list > li {
     display: flex;
     margin-bottom: 30px; }
@@ -515,6 +522,9 @@ h3.h3 {
 /* glassCustomer */
 .customer-list {
   padding: 0 48px; }
+  @media (max-width: 568px) {
+    .customer-list {
+      padding: 0 0px; } }
   .customer-list li {
     border: 1px solid #e6e6e6;
     width: 23.8%;
@@ -540,11 +550,12 @@ h3.h3 {
         padding-bottom: 0px; }
 
 /* glass-contact */
-.glass-contact > p {
+.contact-inner p.txt-medium {
   font-size: 20px;
   margin-bottom: 20px; }
-  .glass-contact > p .submit {
-    margin-bottom: 12px; }
+
+.contact-inner .submit {
+  margin-bottom: 12px; }
 
 /* glass-series-list */
 @media (max-width: 568px) {

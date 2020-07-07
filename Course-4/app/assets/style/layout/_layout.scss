@@ -1,0 +1,48 @@
+/* layout - container */ 
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    @include pad{
+        width: 75%;
+    }
+    @include iphone{
+        width: 100%;
+    }
+}
+
+.main-inner {
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    @include pad{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @include iphone{
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+
+h2.title {
+    @media (max-width: 992px){
+        font-size: $font-size-mdx;
+        margin-bottom: 40px;
+    }
+
+    @include iphone{
+        font-size: $font-size-xs;
+        margin-bottom: 16px;
+    }
+}
+      
+  
+h3.h3 {
+    font-size: $font-size-xxs;
+}

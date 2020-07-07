@@ -1,0 +1,17 @@
+// 原身的 
+.card{
+    border: 1px solid $gray-light!important;
+    border-radius: 0rem;
+}
+.card-header {
+    background-color: $gray-lighter;
+    border-bottom: 1px solid $gray-light;
+}
+.card-body{
+    padding-left: $px-rem-1;
+    background-color: $gray-light;
+    border-top: 1px solid $gray-light;
+    @include iphone{
+        font-size: 14px;
+    }
+}
