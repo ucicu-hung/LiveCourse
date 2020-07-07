@@ -106,7 +106,7 @@ h3.h3 {
   color: #660401; }
 
 .bgColor-fluid {
-  background-color: white; }
+  background-color: #fbebeb;}
 
 .bgColor-primaryDark {
   background-color: #660401; }
@@ -160,7 +160,7 @@ h3.h3 {
   margin: 0 auto; }
 
 .label-contact-group {
-  margin-bottom: 16px; }
+  margin-bottom: 12px; }
 
 input[type="text"], textarea {
   width: 100%;
@@ -195,6 +195,11 @@ input[type="submit"] {
   color: #fff;
   padding: 16px 58px;
   border: 1px solid #AA0601; }
+  @media (max-width: 568px){
+    input[type="submit"] {
+      padding: 7px 36px;
+    }
+  }
   input[type="submit"]:hover {
     background: #650300; }
 
@@ -269,7 +274,11 @@ footer {
   @media (max-width: 568px) {
     footer img {
       width: 24px;
-      height: 24px; } }
+      height: 24px; } 
+    footer p{
+      font-size: 16px;
+    }
+    }
 
 .footer-info {
   margin-bottom: 32px;
@@ -328,8 +337,8 @@ footer {
         @media (max-width: 768px) {
           .footer-info-contact > li:nth-of-type(2) img {
             margin-right: 8px;
-            width: 20px;
-            height: 20px; } }
+            /* width: 20px;
+            height: 20px; */ } }
 
 /* medaia-area */
 .medaia-area {
@@ -343,6 +352,9 @@ footer {
         margin-right: 24px; } }
 
 /* footer-copyright */
+.footer-copyright{
+  position: relative;
+}
 .footer-copyright-list {
   display: flex;
   flex-direction: row;
@@ -393,13 +405,16 @@ footer {
     .container {
       width: 100%; } }
 
-.container-inner {
+.content-inner {
   width: 88%; }
+.content p.txt-medium{
+  padding-bottom: 8px;
+}
 
 .main-inner {
   padding: 64px 0 80px; }
   @media (max-width: 568px) {
-    .main-inner.innder {
+    .main-inner {
       padding: 24px 12px; } }
 
 @media (max-width: 992px) {
@@ -525,6 +540,8 @@ h3.h3 {
         width: 48%;
         margin-bottom: 1.5px; } }
     @media (max-width: 568px) {
+      .customer-list {
+        padding: 0 12px; }
       .customer-list li {
         width: 100%; } }
   .customer-list .customer-list-head img {
@@ -633,7 +650,7 @@ h3.h3 {
 .ai-fe {
   align-items: flex-end; }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .d-flex-row-lg {
     flex-direction: row; }
   .d-flex-row-reverse-lg {
@@ -673,6 +690,6 @@ h3.h3 {
   .d-flex-wrap-sm {
     flex-wrap: wrap; }
   .d-flex-nowrap-sm {
-    flex-wrap: nowrap; } }
+    flex-wrap: nowrap; } } */
 
 /*# sourceMappingURL=all.css.map */
